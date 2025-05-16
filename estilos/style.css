@@ -2,8 +2,8 @@
 
 /*
     Paleta de corres
-    verde #49a09d
-    lilás #5f2c82    
+    laranja #ff7944
+    marrom #964728    
 */
 
 * {
@@ -14,7 +14,7 @@
 }
 
 body, html {
-    background-color: #5f2c82;
+    background-color: #964728;
     height: 100vh;
     width: 100vw;    
 }
@@ -37,11 +37,14 @@ section#login{
     height: 500px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
+
+    transition: width 0.1s, height 0.1s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
     display: block;
-    background: #5f2c82 url(../imagens/pexels-modus-vivendi-32084570.jpg);
+    background: #964728 url(../imagens/pexels-modus-vivendi-32084570.jpg);
     height: 200px;
     background-size: cover;
 }
