@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mq.css">
 </head>
@@ -16,12 +17,20 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo. Faça o login para acessar a sua página.</p>
-                <form action="login.php" method="post">
-                    <p><input type="text" name="user" id="iduser"></p>
-                    <p><input type="password" name="senha" id="idsenha"></p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <p class="campo">
+                        <label for="iduser"><span class="material-symbols-outlined">person</span></label>
+                        <input type="email" name="user" id="iduser" placeholder="e-mail" autocomplete="username" required maxlength="50">
+                    </p>
+                    <p class="campo">
+                        <label for="idsenha"><span class="material-symbols-outlined">key</span></label>
+                        <input type="password" name="senha" id="idsenha" placeholder="Sua senha" autocomplete="current-password" required maxlength="30" minlength="8">                      
+                    </p>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html">Esqueci a senha.</a>
                 </form>
             </div>
         </section>
     </main>
 </body>
-</html>
+</ht
